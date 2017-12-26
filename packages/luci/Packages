@@ -1,0 +1,220 @@
+Package: luci-app-firewall
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, firewall
+Source: feeds/luci/applications/luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 10776
+Filename: luci-app-firewall_git-17.234.69785-72b90c0-1_all.ipk
+Size: 11495
+MD5Sum: 80d0cb463197032b3e91ac0c14c2bfd1
+SHA256sum: e9a9f9d53062296a39061fa2b447bfe8e15f5196d31eaf5662e09cd151cf0be1
+Description:  Firewall and Portforwarding application
+
+Package: luci-base
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, lua, libuci-lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc
+Source: feeds/luci/modules/luci-base
+License: Apache-2.0
+Section: luci
+Architecture: ar71xx
+Installed-Size: 123172
+Filename: luci-base_git-17.234.69785-72b90c0-1_ar71xx.ipk
+Size: 124068
+MD5Sum: e46fbad7ce35bd0664a2eaa19f001f57
+SHA256sum: 17307062317331525edfda5857d59db823786dcfc2101e04f92c87ea1dcaf355
+Description:  LuCI core libraries
+
+Package: luci-lib-ip
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, liblua, libnl-tiny
+Source: feeds/luci/libs/luci-lib-ip
+License: Apache-2.0
+Section: luci
+Architecture: ar71xx
+Installed-Size: 8647
+Filename: luci-lib-ip_git-17.234.69785-72b90c0-1_ar71xx.ipk
+Size: 9362
+MD5Sum: 5f6fb6b325a99e2c9702f9602dad6b5f
+SHA256sum: c66567f25448ccdb08a3e68c5852233bc47d7e497372c435d0cf08edcd06a85a
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-jsonc
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, liblua, libjson-c
+Source: feeds/luci/libs/luci-lib-jsonc
+Section: luci
+Architecture: ar71xx
+Installed-Size: 3704
+Filename: luci-lib-jsonc_git-17.234.69785-72b90c0-1_ar71xx.ipk
+Size: 4384
+MD5Sum: 7b2398bad9716c81a16ffb712a541bad
+SHA256sum: 5e72847b1db04ff3e525b6746dee8c4c98b25a0a9190b08cc0a3aa613b689b52
+Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, liblua
+Source: feeds/luci/libs/luci-lib-nixio
+License: Apache-2.0
+Section: luci
+Architecture: ar71xx
+Installed-Size: 27402
+Filename: luci-lib-nixio_git-17.234.69785-72b90c0-1_ar71xx.ipk
+Size: 27829
+MD5Sum: 22271a6c855e02358c966f4ffac5b97a
+SHA256sum: ce5857faf7431c3501368a342ef326991ea6727aaa0364e98085e7299b4cfbaf
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, luci-base
+Source: feeds/luci/modules/luci-mod-admin-full
+License: Apache-2.0
+Section: luci
+Architecture: ar71xx
+Installed-Size: 76274
+Filename: luci-mod-admin-full_git-17.234.69785-72b90c0-1_ar71xx.ipk
+Size: 77123
+MD5Sum: 7307d89f2f95097b3e9b25e8379918ac
+SHA256sum: d6ea1bb8936edf1557187415081f59eba4814232d5470e6b489fe6e65e172e4d
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-proto-ipv6
+Version: git-17.234.69785-72b90c0-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ipv6
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 4789
+Filename: luci-proto-ipv6_git-17.234.69785-72b90c0-1_all.ipk
+Size: 5514
+MD5Sum: 92f81821dfcd40fda33e275f1b131187
+SHA256sum: 124c7c14ee8b3598f97cf59dec53c97a8366739100dbe0d1360fdbcb48604b8f
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite/aiccu
+
+Package: luci-proto-ppp
+Version: git-17.234.69785-72b90c0-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ppp
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 3090
+Filename: luci-proto-ppp_git-17.234.69785-72b90c0-1_all.ipk
+Size: 3777
+MD5Sum: 1178eb01baaa5ffeacb4c35f37aa60f0
+SHA256sum: fcd314cfef3a2688e352cb857dd5579ddbfbb909573ac2f75b9c5f773409efba
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-ssl-openssl
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, luci, libustream-openssl, openssl-util
+Source: feeds/luci/collections/luci-ssl-openssl
+Section: luci
+Architecture: all
+Installed-Size: 106
+Filename: luci-ssl-openssl_git-17.234.69785-72b90c0-1_all.ipk
+Size: 890
+MD5Sum: d125dd1a7504b028fd3ccf615aad962c
+SHA256sum: b763cfff588a9a2266ae97ef685b4087f755ec790c7c4dd3ff250dbad799e17a
+Description:  LuCI with OpenSSL as the SSL backend (libustream-openssl). OpenSSL cmd tools (openssl-util) are used by uhttpd for SSL key generation instead of the default px5g. (If px5g is installed, uhttpd will prefer that.)
+
+Package: luci-ssl
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, luci, libustream-mbedtls, px5g
+Source: feeds/luci/collections/luci-ssl
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 106
+Filename: luci-ssl_git-17.234.69785-72b90c0-1_all.ipk
+Size: 821
+MD5Sum: 7bc3dd5f25e19519fe67167b4a01244a
+SHA256sum: 814f7eded990dc1dc4114012d5b51acf5f1b0e2d5c663eac22211cb88612507b
+Description:  LuCI with HTTPS support (mbedTLS as SSL backend)
+
+Package: luci-theme-bootstrap
+Version: git-17.234.69785-72b90c0-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-bootstrap
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 13170
+Filename: luci-theme-bootstrap_git-17.234.69785-72b90c0-1_all.ipk
+Size: 13924
+MD5Sum: 5f881fe126fe401b20a8b2e690abc6fc
+SHA256sum: 57c0b2101d919f4573be6e132b8fe6edb925aba0bcaee369a650c1f5a7d0c0a2
+Description:  Bootstrap Theme (default)
+
+Package: luci-theme-freifunk-generic
+Version: git-17.234.69785-72b90c0-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-freifunk-generic
+Section: luci
+Architecture: all
+Installed-Size: 12779
+Filename: luci-theme-freifunk-generic_git-17.234.69785-72b90c0-1_all.ipk
+Size: 13549
+MD5Sum: 800b6aafc3a6d435dee9a53ed768f501
+SHA256sum: 1b3d26acba4c2aad01f30007d58b9fbb542a3b64be52bd3988949aab28f151f5
+Description:  Freifunk Generic Theme
+
+Package: luci-theme-material
+Version: git-17.234.69785-72b90c0-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-material
+Section: luci
+Architecture: all
+Installed-Size: 50525
+Filename: luci-theme-material_git-17.234.69785-72b90c0-1_all.ipk
+Size: 51418
+MD5Sum: 287b62dc21be81938617a792150130bd
+SHA256sum: 8ec7d31e1e8894e97c9adf321c095f5dad8d7d97ebdc0bed7ed9cfca8383bce9
+Description:  Material Theme
+
+Package: luci-theme-openwrt
+Version: git-17.234.69785-72b90c0-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-openwrt
+Section: luci
+Architecture: all
+Installed-Size: 6958
+Filename: luci-theme-openwrt_git-17.234.69785-72b90c0-1_all.ipk
+Size: 7758
+MD5Sum: 67f2e77e8ac0d9eac7fd207841bb9982
+SHA256sum: 3a10d289e3b15bd7f7e356d0794d67f1701b5a4f1fc2d59af2a332d250e763b8
+Description:  LuCI OpenWrt.org theme
+
+Package: luci
+Version: git-17.234.69785-72b90c0-1
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6, rpcd-mod-rrdns
+Source: feeds/luci/collections/luci
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 106
+Filename: luci_git-17.234.69785-72b90c0-1_all.ipk
+Size: 893
+MD5Sum: 677522df84fc905641b21806847045a2
+SHA256sum: a01b2a8c72ad78ed6f89a96ec8de84bea4b837903395c4f864d9b1d99be6e1f6
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox, libubus
+Source: feeds/luci/libs/rpcd-mod-rrdns
+License: Apache-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: ar71xx
+Installed-Size: 3548
+Filename: rpcd-mod-rrdns_20170710_ar71xx.ipk
+Size: 4321
+MD5Sum: 1b372684ed8671518b2b1a941855ff72
+SHA256sum: e0b781dbd0d91d7d1441d97b501a4cc7888f6943eb6f8869fdf03410338720f0
+Description:  Provides rapid mass reverse DNS lookup functionality.
+

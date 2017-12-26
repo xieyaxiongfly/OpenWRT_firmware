@@ -1,0 +1,1177 @@
+Package: base-files
+Version: 169-50108
+Depends: libc, netifd, procd, jsonfilter, usign, fstools
+Source: package/base-files
+License: GPL-2.0
+Section: base
+Architecture: ar71xx
+Installed-Size: 57320
+Filename: base-files_169-50108_ar71xx.ipk
+Size: 58219
+MD5Sum: 5759ca5c0a8af1bfd97446f364dc3389
+SHA256sum: 97aae6f27c91d9c6c06d216d8f057f1d897ed99162ebe5b761d3af84729290dd
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: busybox
+Version: 1.24.2-1
+Depends: libc
+Source: package/utils/busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 202962
+Filename: busybox_1.24.2-1_ar71xx.ipk
+Size: 203057
+MD5Sum: bd194f6263f3cfa576bc14c550436be7
+SHA256sum: 25fa067f4a5dc6190898ea3dbff9bfc3f9d52e242a6234ffbdf27519a6445a62
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: dnsmasq
+Version: 2.76-1
+Depends: libc
+Source: package/network/services/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Require-User: dnsmasq=453:dnsmasq=453
+Architecture: ar71xx
+Installed-Size: 87490
+Filename: dnsmasq_2.76-1_ar71xx.ipk
+Size: 88092
+MD5Sum: 70490c61d45b3242d331bcd38a592830
+SHA256sum: 6b14a9d6e33b7d1fb7c4cc5f8ed74714806342f77a5d759d476fa81cefe3f0db
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2016.74-1
+Depends: libc
+Source: package/network/services/dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+Architecture: ar71xx
+Installed-Size: 87468
+Filename: dropbear_2016.74-1_ar71xx.ipk
+Size: 87558
+MD5Sum: 093c4ccb070067e47b9c8f60af1c87e2
+SHA256sum: 6b6b6baf3cfa9b5c3fe8cd04cadf65771fd80cd4639c6baa28d80340af3cf5b2
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: firewall
+Version: 2016-11-29-1
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables, kmod-ipt-core, kmod-ipt-conntrack, kmod-ipt-nat
+Source: package/network/config/firewall
+License: ISC
+Section: net
+Architecture: ar71xx
+Installed-Size: 34381
+Filename: firewall_2016-11-29-1_ar71xx.ipk
+Size: 34994
+MD5Sum: f701181025ac35b9e9142b1db86f8bf1
+SHA256sum: fe4cb573ee6fe005859a28441bc7cc8516ade03732e6c2cb2bb964b8ca8ee798
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: fstools
+Version: 2016-07-24-addd7dc21fe99f2701c1d4708071578052af401d
+Depends: libc, ubox
+Source: package/system/fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 18235
+Filename: fstools_2016-07-24-addd7dc21fe99f2701c1d4708071578052af401d_ar71xx.ipk
+Size: 18910
+MD5Sum: e36dac73d1e72dd6c60b9613a0100031
+SHA256sum: 05ddc3c6d86304027b530f7d950f9c9c62f0d270b3951fc1ca4dd6f9ae5e6b1d
+Description:  OpenWrt filesystem tools
+
+Package: hostapd-common
+Version: 2016-06-15-1
+Depends: libc
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 5330
+Filename: hostapd-common_2016-06-15-1_ar71xx.ipk
+Size: 6042
+MD5Sum: a6566f86b4726a36953eeda199bb09c5
+SHA256sum: 78696e02c7cef4dec1ae940b13aea20fc15ae359d0bc7ba92d799815b2338575
+Description:  hostapd/wpa_supplicant common support files
+
+Package: injector
+Version: 1.0-1
+Depends: libc
+Source: package/injector
+Section: CSI
+Architecture: ar71xx
+Installed-Size: 48882
+Filename: injector_1.0-1_ar71xx.ipk
+Size: 49567
+MD5Sum: 135f9118edf2362f7dafe244f2691c22
+SHA256sum: 90596da8bf485fde82b90940f4c4f39f5763a3dbfb5a6534bf0a99a71de81e84
+Description:  inject Wi-Fi packets into wireless channel	
+
+Package: ip6tables
+Version: 1.4.21-2
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: ar71xx
+Installed-Size: 211
+Filename: ip6tables_1.4.21-2_ar71xx.ipk
+Size: 899
+MD5Sum: 8d0d5b312e09d2746ed796e1cd3dc2c8
+SHA256sum: 50b58bc428e3de25c1ff1fbd7b9c3c3a9569a3aed081f4568fc94a3c6a48f29d
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.4.21-2
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: ar71xx
+Installed-Size: 20758
+Filename: iptables_1.4.21-2_ar71xx.ipk
+Size: 21466
+MD5Sum: 2281ea341876110eb0ee29b863a68bbe
+SHA256sum: f2e097480b139d98fa731cd156c5b75ef719bc0e9189a2d3794522a4da7e5e3f
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iw
+Version: 4.3-1
+Depends: libc, libnl-tiny
+Source: package/network/utils/iw
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 31525
+Filename: iw_4.3-1_ar71xx.ipk
+Size: 32226
+MD5Sum: 085af43494d1420d4a62baafccec6841
+SHA256sum: 319e35771eb71eaffb4dcdfc9b6183dc844047fbe25a4eda757de88138cc67b1
+Description:  cfg80211 interface configuration utility
+
+Package: iwinfo
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libiwinfo
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 5767
+Filename: iwinfo_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_ar71xx.ipk
+Size: 6550
+MD5Sum: 8f094d1d3382514549d80fd03df2c7b4
+SHA256sum: 08e5cf74b3eb913fa7f3844eac9a576c20840a6bcfccca30eb5929b731e1d437
+Description:  Command line frontend for the wireless information library.
+
+Package: jshn
+Version: 2016-11-29-77a629375d7387a33a59509d9d751a8798134cab
+Depends: libc, libjson-c, libubox, libblobmsg-json
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 5371
+Filename: jshn_2016-11-29-77a629375d7387a33a59509d9d751a8798134cab_ar71xx.ipk
+Size: 6160
+MD5Sum: 8ea7e36ea6f1b1cd446048fdfbde9bc0
+SHA256sum: 9e9ad5fdc7ba7b2711ab362a3684e9953fa663a1315a39c3f19359af3c56c04a
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2016-07-02-dea067ad67d977c247c300c06676a06adf21e0c7
+Depends: libc, libubox, libjson-c
+Source: package/utils/jsonfilter
+License: ISC
+Section: base
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 7736
+Filename: jsonfilter_2016-07-02-dea067ad67d977c247c300c06676a06adf21e0c7_ar71xx.ipk
+Size: 8534
+MD5Sum: 81edbb556db84886dfe488164850e0f1
+SHA256sum: 76661b4d7377e220927339a7b5054a8fe02e7762300fb2838ced11afd5b4946b
+Description:  OpenWrt JSON filter utility
+
+Package: libblobmsg-json
+Version: 2016-11-29-77a629375d7387a33a59509d9d751a8798134cab
+Depends: libc, libjson-c, libubox
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 3531
+Filename: libblobmsg-json_2016-11-29-77a629375d7387a33a59509d9d751a8798134cab_ar71xx.ipk
+Size: 4269
+MD5Sum: 10567680b9725a46664ec92fd15158d6
+SHA256sum: 9963e0747761defd14a7f285c4c336c907afea3bcdc092cca5551ff9fe573fbd
+Description:  blobmsg <-> json conversion library
+
+Package: libgcc
+Version: 5.3.0-1
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 34054
+Filename: libgcc_5.3.0-1_ar71xx.ipk
+Size: 34862
+MD5Sum: 04770a464beb6f225ef2d405b214b5b4
+SHA256sum: e088040eb58dce6ead10b0f3e3b165f78a3b7fd1b88f756c0ae724a834beb3ec
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.4.21-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: ar71xx
+Installed-Size: 16432
+Filename: libip4tc_1.4.21-2_ar71xx.ipk
+Size: 17101
+MD5Sum: 0598c7ae366e61866c049034c3335e65
+SHA256sum: 93bcf18d4efb5aace84c9cae389a86ef75fa37e1ccc811b268c23e92b6eb4048
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.4.21-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: ar71xx
+Installed-Size: 16079
+Filename: libip6tc_1.4.21-2_ar71xx.ipk
+Size: 16730
+MD5Sum: 5f1b8838b45353d356daeddc30cc279d
+SHA256sum: 493e1e6950c167d3cb94c2bf83680a0d181904ee5746a7306971d2cbc62084a8
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libiwinfo, liblua
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 6201
+Filename: libiwinfo-lua_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_ar71xx.ipk
+Size: 6926
+MD5Sum: d7df439cc3e9fac2ae9fa0b9b925411a
+SHA256sum: 3f29449e7e42e07aef4d14ee1190da2300ff33f14b838d651dc2fce1847884eb
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libnl-tiny, libuci
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 21459
+Filename: libiwinfo_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_ar71xx.ipk
+Size: 22245
+MD5Sum: 41f433edacbea1f2b8bd9d058f9560e1
+SHA256sum: b7f57bebe33e25dd7bd38c250f3a249ca2d0e295b20309c8103a171e59fdb7fe
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ madwifi, nl80211 and wext driver interfaces.
+
+Package: libjson-c
+Version: 0.12-1
+Depends: libc
+Source: package/libs/libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 13683
+Filename: libjson-c_0.12-1_ar71xx.ipk
+Size: 14382
+MD5Sum: aae8b40343a31b91d8ac61934f1b6815
+SHA256sum: 1a997dc727a8d0773684d95e4fe6ddedf2627ecfc0dd86b3d24c82fd1eae7b87
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script
+Version: 2016-11-29-77a629375d7387a33a59509d9d751a8798134cab
+Depends: libc, libubox
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 4710
+Filename: libjson-script_2016-11-29-77a629375d7387a33a59509d9d751a8798134cab_ar71xx.ipk
+Size: 5443
+MD5Sum: 8a4c104b1c4cd67f6c88b6738451593a
+SHA256sum: 8d8bf92588111a54f71f7d5d23ebec84d0dc4259d0feb5b8ddf53c6b308f86df
+Description:  Minimalistic JSON based scripting engine
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 62703
+Filename: liblua_5.1.5-1_ar71xx.ipk
+Size: 63130
+MD5Sum: 42f0d4083be6159c27ca4a0d689a5ec2
+SHA256sum: 94edcdfc19841d34e0cfe96c85abfde8538972ab6f5d632f2e8a2164a1caec26
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libmbedtls
+Version: 2.3.0-2
+Depends: libc
+Source: package/libs/mbedtls
+License: GPL-2.0+
+Section: libs
+Architecture: ar71xx
+Installed-Size: 161560
+Filename: libmbedtls_2.3.0-2_ar71xx.ipk
+Size: 162009
+MD5Sum: 7c2215bd811ce9d60d075c2887630744
+SHA256sum: 33b1b4b3c179d9c9c26b6fe50c5a3851909c8d48a3d04300275ab257998471a1
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the mbedtls library.
+
+Package: libnfnetlink
+Version: 1.0.1-1
+Depends: libc
+Source: package/libs/libnfnetlink
+License: GPL-2.0+
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 8115
+Filename: libnfnetlink_1.0.1-1_ar71xx.ipk
+Size: 9024
+MD5Sum: 5a18bb18c5c6336c9596a32c97fc1633
+SHA256sum: 264c6dd32b110abf7d667c505f323b04a1b87da34abf29cdcb32c81f20a52125
+Description:  libnfnetlink is is the low-level library for netfilter related kernel/userspace communication.
+ It provides a generic messaging infrastructure for in-kernel netfilter subsystems
+ (such as nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their respective users
+ and/or management tools in userspace.
+
+Package: libnl-core
+Version: 3.2.21-1
+Depends: libc, libpthread
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: ar71xx
+Installed-Size: 33297
+Filename: libnl-core_3.2.21-1_ar71xx.ipk
+Size: 33765
+MD5Sum: 8d98b2d2df4719a26e975597f18bb5b0
+SHA256sum: 54e2c5d9805d86ef4d8e6459472a60f87c5029a05ceed4c694a1ef3b93052841
+Description:  Common code for all netlink libraries
+
+Package: libnl-genl
+Version: 3.2.21-1
+Depends: libc, libnl-core
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: ar71xx
+Installed-Size: 6405
+Filename: libnl-genl_3.2.21-1_ar71xx.ipk
+Size: 7079
+MD5Sum: 3fef2e1d5a0a66208602ed73360a7aa6
+SHA256sum: 3f21335b31bb846aabcdaaa8c584a21e3010e119595f7a8d1dcb04c62c9699b7
+Description:  Generic Netlink Library Functions
+
+Package: libnl-nf
+Version: 3.2.21-1
+Depends: libc, libnl-route
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: ar71xx
+Installed-Size: 21075
+Filename: libnl-nf_3.2.21-1_ar71xx.ipk
+Size: 21584
+MD5Sum: 88102f5222f8fe2ef8e56191847054fb
+SHA256sum: f7514dba178792e541dc891f4e7a250e1fdf7097111e2b4e3ad5ae8f1bd0c480
+Description:  Netfilter Netlink Library Functions
+
+Package: libnl-route
+Version: 3.2.21-1
+Depends: libc, libnl-core
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: ar71xx
+Installed-Size: 83910
+Filename: libnl-route_3.2.21-1_ar71xx.ipk
+Size: 84133
+MD5Sum: a36599b9b69bcec2b3b66ffa6eab23d8
+SHA256sum: ca2397ed4a01da764073c21ae8e2863fb146eb0d50a4eb36584d351ad9184889
+Description:  Routing Netlink Library Functions
+
+Package: libnl-tiny
+Version: 0.1-5
+Depends: libc
+Source: package/libs/libnl-tiny
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 11715
+Filename: libnl-tiny_0.1-5_ar71xx.ipk
+Size: 12443
+MD5Sum: 4fbaaded6a8a28a40c9280befbc4b987
+SHA256sum: 35c82c718e2aeb74e7064bc4898bf962515d4906c99fbafee8a1dd650df0b565
+Description:  This package contains a stripped down version of libnl
+
+Package: libnl
+Version: 3.2.21-1
+Depends: libc, libnl-genl, libnl-route, libnl-nf
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: ar71xx
+Installed-Size: 106
+Filename: libnl_3.2.21-1_ar71xx.ipk
+Size: 839
+MD5Sum: 0d4287825d5db8f75b0dc49d8f36eff9
+SHA256sum: 4583d6fe9d561b8d7eae7472f5f15f6806d9a82043f9f31b2a12ba0b0a780790
+Description:  Socket handling, connection management, sending and receiving of data,
+ message construction and parsing, object caching system, etc.
+
+Package: libopenssl
+Version: 1.0.2j-1
+Depends: libc, zlib
+Source: package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: libs
+Architecture: ar71xx
+Installed-Size: 742543
+Filename: libopenssl_1.0.2j-1_ar71xx.ipk
+Size: 736894
+MD5Sum: 5dff77fc763c2c3d5a3b15a659f4df38
+SHA256sum: 8eb5d1bbf4097b6d07b2155ebd873633a384989f5d2a8c2a16c6fd82a4517bdc
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpcap
+Version: 1.7.4-1
+Depends: libc
+Source: package/libs/libpcap
+License: BSD-3-Clause
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 83316
+Filename: libpcap_1.7.4-1_ar71xx.ipk
+Size: 83840
+MD5Sum: d83ba0fc2689e1e32dc98ec498f41986
+SHA256sum: 3ad5ddfc211d253c406113a20de3ee58aef4898f750691940f57940a677a7798
+Description:  This package contains a system-independent library for user-level network packet
+ capture.
+
+Package: libpolarssl
+Version: 1.3.17-1
+Depends: libc
+Source: package/libs/polarssl
+License: GPL-2.0+
+Section: libs
+Architecture: ar71xx
+Installed-Size: 143744
+Filename: libpolarssl_1.3.17-1_ar71xx.ipk
+Size: 144288
+MD5Sum: 0e5139d2d482066afec4d703c1234f99
+SHA256sum: c0e14c89011abf1f5f7d13835b19cc3e63c17ae4ed2b97f58ae51d68135bcd61
+Description:  The aim of the PolarSSL project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the PolarSSL library.
+
+Package: libpthread
+Version: 1.1.16-1
+Depends: libgcc
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 123
+Filename: libpthread_1.1.16-1_ar71xx.ipk
+Size: 856
+MD5Sum: 54e87be658de9be07756aa207530f400
+SHA256sum: 76a40ae145af9ce96d51109d7306706480f2116d514e3b0accf281e828385886
+Description:  POSIX thread library
+
+Package: libubox
+Version: 2016-11-29-77a629375d7387a33a59509d9d751a8798134cab
+Depends: libc
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 17587
+Filename: libubox_2016-11-29-77a629375d7387a33a59509d9d751a8798134cab_ar71xx.ipk
+Size: 18331
+MD5Sum: 70bb2a1aa1b226f17208b3bf9eba185c
+SHA256sum: 4d54e7fe9f317cb70d9768d49536b699ec7c551348caf0fad17e196a459766f7
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubus, liblua
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 6040
+Filename: libubus-lua_2016-07-02-053be7df871e05478284235732f8b0608089512f_ar71xx.ipk
+Size: 6799
+MD5Sum: cbc657678bedf5e29944a15a22a3deac
+SHA256sum: 1cd1528b5a870dea160cb4d493ddd689b8cdc236a3eb1cfd3c9c136f894c6531
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 8812
+Filename: libubus_2016-07-02-053be7df871e05478284235732f8b0608089512f_ar71xx.ipk
+Size: 9597
+MD5Sum: 0295b971a093a62e5537aac378ed7e31
+SHA256sum: eb9e3ffbb37cc1b8ac7d6132997cbfef192193d7d4168f0ca36cf868db196a5e
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2016-07-04.1-1
+Depends: libc, libuci, liblua
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 5465
+Filename: libuci-lua_2016-07-04.1-1_ar71xx.ipk
+Size: 6186
+MD5Sum: 4f8d8a6daa4544a39b034de7bbbdbecd
+SHA256sum: 5dc2d510776aefb492787f7a8dae89c8b96dad7f94976193d487b1b3ac6d35ae
+Description:  Lua plugin for UCI
+
+Package: libuci
+Version: 2016-07-04.1-1
+Depends: libc, libubox
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 13943
+Filename: libuci_2016-07-04.1-1_ar71xx.ipk
+Size: 14645
+MD5Sum: b18df724c92ee7308b82dc630e18f21e
+SHA256sum: ec224b63836b7d0fd34c8578cf3de1cbc921ca4324f8ac617b87baa13952148f
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libuclient
+Version: 2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3
+Depends: libc, libubox
+Source: package/libs/uclient
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 8509
+Filename: libuclient_2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3_ar71xx.ipk
+Size: 9287
+MD5Sum: 4ef36416a9d001fb768ced80189e2878
+SHA256sum: 11ec0cdbfa3d95c94714f3280f069c6016ef6e84354870c1dd3da265e8166f5b
+Description:  HTTP/1.1 client library
+
+Package: libustream-mbedtls
+Version: 2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6
+Depends: libc, libubox, libmbedtls
+Source: package/libs/ustream-ssl
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 3591
+Filename: libustream-mbedtls_2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6_ar71xx.ipk
+Size: 4324
+MD5Sum: 04e4256bc12ae82d105668386dbd91ca
+SHA256sum: 86585d9df3300d77083ba3991f032c8f11471711cb9f704cf72f8d026745125e
+Description:  ustream SSL Library (mbedtls)
+
+Package: libustream-openssl
+Version: 2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6
+Depends: libc, libubox, libopenssl
+Source: package/libs/ustream-ssl
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 3413
+Filename: libustream-openssl_2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6_ar71xx.ipk
+Size: 4139
+MD5Sum: 2cb86f748c914de9c6171f5cb24a65d9
+SHA256sum: f3e54a81dc37a25c824b03b2c5d03ad2a588ee53e0831adfa99ce5cead420bba
+Description:  ustream SSL Library (openssl)
+
+Package: libxtables
+Version: 1.4.21-2
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: ar71xx
+Installed-Size: 34814
+Filename: libxtables_1.4.21-2_ar71xx.ipk
+Size: 35603
+MD5Sum: d970dc2800817efa3ea4bff24a311d5d
+SHA256sum: 360cecac0fa9e7a259a2c4e6e4ace9cba707e03ee69b7a6d10c8221358e8779f
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: logd
+Version: 2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a
+Depends: libc, libubox, libubus, libblobmsg-json
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 9039
+Filename: logd_2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a_ar71xx.ipk
+Size: 9752
+MD5Sum: cc2f9f034ee730df01d045a7e02264ee
+SHA256sum: 019863052feb218fa143b07011e0c46384b8691597f7b5fce41f97d382294844
+Description:  OpenWrt system log implementation
+
+Package: lorcon
+Version: 2017git-1
+Depends: libc, libpcap, wireless-tools, libnfnetlink, libnl
+Source: package/lorcon
+Section: lib
+Architecture: ar71xx
+Installed-Size: 30821
+Filename: lorcon_2017git-1_ar71xx.ipk
+Size: 31507
+MD5Sum: 04927811319b7af94e18f5f38e2bc60e
+SHA256sum: e3444da99122b6c29b11d8bda2bcb1e6ac8c2cffa91a97cc19dc34a56daf34fb
+Description:  LORCON Tools
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 4321
+Filename: lua_5.1.5-1_ar71xx.ipk
+Size: 5134
+MD5Sum: d3bfac430c3bb347a9da63740aaef562
+SHA256sum: e932eff5c5877504a3b9199cd37f33784d7938c72010ca7ccb8813fb77df6456
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: mtd
+Version: 21
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPL-2.0+
+Section: utils
+Architecture: ar71xx
+Installed-Size: 13856
+Filename: mtd_21_ar71xx.ipk
+Size: 14580
+MD5Sum: e978cb51aa2065c59b9a1e68d7cffd41
+SHA256sum: fff7db3d4cd109bbf76508b0bb32d2795dc478c2e63a4aaa9158da8c278d4e9e
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2016-12-09-edc15caac6c6d3b2d8ea17f98ecbaba81ba573dc
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 57668
+Filename: netifd_2016-12-09-edc15caac6c6d3b2d8ea17f98ecbaba81ba573dc_ar71xx.ipk
+Size: 58367
+MD5Sum: 9a5062e1e3069490dbebc5cfa5ac3c55
+SHA256sum: cba0a7056c3014d610b4c4d988e6868c14cf7fd01047349d808df3522cd0756a
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: odhcp6c
+Version: 2016-02-08-7533a6243dc3ac5a747cf6ccbc4d0539dafd3e07
+Depends: libc
+Source: package/network/ipv6/odhcp6c
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: ar71xx
+Installed-Size: 21388
+Filename: odhcp6c_2016-02-08-7533a6243dc3ac5a747cf6ccbc4d0539dafd3e07_ar71xx.ipk
+Size: 22138
+MD5Sum: 2afd8f2436686fcf29d61408502e0129
+SHA256sum: 35b2add3ae043e2a0c09b73c6504e2d61c2d33e5332425b78eaf6886807e8875
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd
+Version: 2016-10-09-801cfeea100ca7b211c9841f0fcb757b17f47860
+Depends: libc, libubox, libuci, libubus
+Source: package/network/services/odhcpd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: ar71xx
+Installed-Size: 26796
+Filename: odhcpd_2016-10-09-801cfeea100ca7b211c9841f0fcb757b17f47860_ar71xx.ipk
+Size: 27560
+MD5Sum: 5f386acf5f8e9470b2684ddb1dc6f520
+SHA256sum: 53cd447de54de1f95a382298f739020560915a68c1b1dfc6700a387abb485cea
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ odhcpd provides server services for DHCP, RA, stateless and stateful DHCPv6,
+ prefix delegation and can be used to relay RA, DHCPv6 and NDP between routed
+ (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: openssl-util
+Version: 1.0.2j-1
+Depends: libc, libopenssl
+Source: package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: utils
+Architecture: ar71xx
+Installed-Size: 199307
+Filename: openssl-util_1.0.2j-1_ar71xx.ipk
+Size: 200265
+MD5Sum: 690b8e65accf8ac4f3cc31b715a79c9c
+SHA256sum: affc1fafb9bb25dc7ab882ec223d52c3dfb6f894f066f4cfd1c0a696acd8e5ce
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL command-line utility.
+
+Package: opkg
+Version: 9c97d5ecd795709c8584e972bfdf3aee3a5b846d-15
+Depends: libc, uclient-fetch
+Source: package/system/opkg
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: base
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: ar71xx
+Installed-Size: 54884
+Filename: opkg_9c97d5ecd795709c8584e972bfdf3aee3a5b846d-15_ar71xx.ipk
+Size: 55785
+MD5Sum: 80f1db782f36a5ab12b3c81fcd9f065d
+SHA256sum: 832d9151bdf63684e368d8f6cd37b1950db45188e0b03af76ac00b4cf1832254
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: ppp-mod-pppoe
+Version: 2.4.7-9
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 9173
+Filename: ppp-mod-pppoe_2.4.7-9_ar71xx.ipk
+Size: 9930
+MD5Sum: c38c2b99ea7ede228db452da24661764
+SHA256sum: ef3ab53f594edf166f977226bad0c5cdec632c74ae3b5f69aa6423c97c65d2db
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.7-9
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 98160
+Filename: ppp_2.4.7-9_ar71xx.ipk
+Size: 98822
+MD5Sum: 228fb7bfa8ec16d774c403d24237161d
+SHA256sum: 0fa3d58724dfc7047a7d9069b7f9d5e2e35c09d79cf811663202af9a6eedafd6
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: procd
+Version: 2016-07-29-2c9f5d4af1559b840c42f1443ede9f9fe809c58b
+Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
+Source: package/system/procd
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 33853
+Filename: procd_2016-07-29-2c9f5d4af1559b840c42f1443ede9f9fe809c58b_ar71xx.ipk
+Size: 34410
+MD5Sum: 8dfa6d52d02e11fa20b172bcb1a10718
+SHA256sum: 78662fb076d6ca2977efc3d1105ba907a7dcdc426a03072ec982cba39c59e41d
+Description:  OpenWrt system process manager
+
+Package: px5g
+Version: 4
+Depends: libc, libpolarssl
+Source: package/utils/px5g
+License: LGPL-2.1
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 4211
+Filename: px5g_4_ar71xx.ipk
+Size: 4992
+MD5Sum: 652a9207d1988ae9414f22bc03954c20
+SHA256sum: 59bee192b90c6d77d9ba8e132bffb221bf46af464588d64065e1dc9704849564
+Description:  Px5g is a tiny standalone X.509 certificate generator.
+ It suitable to create key files and certificates in DER
+ and PEM format for use with stunnel, uhttpd and others.
+
+Package: recvCSI
+Version: 1.0-1
+Depends: libc
+Source: package/recvCSI
+Section: CSI
+Architecture: ar71xx
+Installed-Size: 2655
+Filename: recvCSI_1.0-1_ar71xx.ipk
+Size: 3316
+MD5Sum: 4397d0379335e1008afdd8997db2c3c3
+SHA256sum: 871e7a462259957291e773c03f8fad441669114a2d1c6472a67a568ac77d01e1
+Description:  CSI Receive Data utility
+
+Package: rpcd
+Version: 2016-06-30-23417e94d25570e6d62542bac46edd51e8e0243a
+Depends: libc, libubus, libubox, libuci, libblobmsg-json
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 15696
+Filename: rpcd_2016-06-30-23417e94d25570e6d62542bac46edd51e8e0243a_ar71xx.ipk
+Size: 16407
+MD5Sum: 8357e217bce9de497fa13b2574018c07
+SHA256sum: d41160cbeed845caa15c003156d0aa949443f7baa3b57d3573e907d6295d4de8
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: sendData
+Version: 1.0-1
+Depends: libc
+Source: package/sendData
+Section: CSI
+Architecture: ar71xx
+Installed-Size: 2317
+Filename: sendData_1.0-1_ar71xx.ipk
+Size: 2969
+MD5Sum: 7d3214fb37c1e96ee6ddecf828caf796
+SHA256sum: 9d7cfce6530c30ff1b3b3a9e6cfea4375895be1faec3e52d3fd1fe2050e0cd01
+Description:  CSI Send Data utility
+
+Package: setPHY
+Version: 1.0-1
+Depends: libc
+Source: package/setPHY
+Section: CSI
+Architecture: ar71xx
+Installed-Size: 2165
+Filename: setPHY_1.0-1_ar71xx.ipk
+Size: 2832
+MD5Sum: 7ae136d9ca93612745263584bc56adaf
+SHA256sum: 11c94015f11006f4ff4699cdf848d235c08daa0f8ca68f56d9ebd36a30977125
+Description:  set PHY layer parameters	
+
+Package: swconfig
+Version: 11
+Depends: libc, libuci, libnl-tiny
+Source: package/network/config/swconfig
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 9424
+Filename: swconfig_11_ar71xx.ipk
+Size: 10157
+MD5Sum: e221c58a3f71ca57b3d976a9e55bb34d
+SHA256sum: 73b2d30eed2421ea337d7636b97bc7f2fdefeb55b17f92bc464c9b61eb91bb56
+Description:  Switch configuration utility
+
+Package: uboot-envtools
+Version: 2015.10-1
+Depends: libc
+Source: package/boot/uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+Architecture: ar71xx
+Installed-Size: 10436
+Filename: uboot-envtools_2015.10-1_ar71xx.ipk
+Size: 11178
+MD5Sum: ef780f4c27506aab910ed349aa037f27
+SHA256sum: 48114b1e05830e76fca29ab41e595ae766bcea4fd7cb4c20df07026220a541e3
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
+Package: ubox
+Version: 2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a
+Depends: libc, libubox, ubusd, ubus, libubus, libuci
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 14189
+Filename: ubox_2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a_ar71xx.ipk
+Size: 14929
+MD5Sum: 5824cfb0839054826bae3d5d43ae1f1f
+SHA256sum: b8521eb6d6cf6c5e42bdb2597e916534d7e5b32d83500e1a8a70fb687d4acf0c
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 4771
+Filename: ubus_2016-07-02-053be7df871e05478284235732f8b0608089512f_ar71xx.ipk
+Size: 5521
+MD5Sum: a7bdae4b2af17445606692b377791a73
+SHA256sum: 099ac0a03cab2059f0545d0a7c58b148dc6c646a1096da71d5b1615e691a264c
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubox, libblobmsg-json
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 9052
+Filename: ubusd_2016-07-02-053be7df871e05478284235732f8b0608089512f_ar71xx.ipk
+Size: 9849
+MD5Sum: 58595a3c5ba43ed4ed3957de53158b9f
+SHA256sum: 42a192fb5df32da3147bccbb0b62fc61a9f4e01c9ec3a01aafd7b032a9a09fb9
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2016-07-04.1-1
+Depends: libc, libuci
+Source: package/system/uci
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 6624
+Filename: uci_2016-07-04.1-1_ar71xx.ipk
+Size: 7325
+MD5Sum: 8567d264ad9469a9d6a39553c47da044
+SHA256sum: 9230a2011608444939d60b2562c97aeccb11b480342427242e748137bafd3871
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uclient-fetch
+Version: 2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3
+Depends: libc, libuclient
+Source: package/libs/uclient
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 6725
+Filename: uclient-fetch_2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3_ar71xx.ipk
+Size: 7510
+MD5Sum: 09570e4b3525fc3da25f81034c6c2918
+SHA256sum: 5614cef944c43038aa837e79a08a4eb9b87ff1a8da65d39d87b5c685da5f7441
+Description:  Tiny wget replacement using libuclient
+
+Package: uhttpd-mod-ubus
+Version: 2016-10-05-fe01ef3f52adae9da38ef47926cd50974af5d6b7
+Depends: libc, uhttpd, libubus, libblobmsg-json
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 5587
+Filename: uhttpd-mod-ubus_2016-10-05-fe01ef3f52adae9da38ef47926cd50974af5d6b7_ar71xx.ipk
+Size: 6412
+MD5Sum: fbe4caf07a7c4e959626167deebdc598
+SHA256sum: 53828c2abe7cfe293a0d20509f7178ae1fc843368c2552f2d55ddd657fe6531d
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2016-10-05-fe01ef3f52adae9da38ef47926cd50974af5d6b7
+Depends: libc, libubox, libblobmsg-json, libjson-script
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 21293
+Filename: uhttpd_2016-10-05-fe01ef3f52adae9da38ef47926cd50974af5d6b7_ar71xx.ipk
+Size: 22062
+MD5Sum: 8c2a56474c05830abdd0fec9b05f4134
+SHA256sum: 575a9730cab1d7561ce117d9fec22c461121db552b2eaf88d3230f74a97d4ab9
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: usign
+Version: 2016-07-04-ef6419142a3b0fbcddcccf536e3c1880302c6f89
+Depends: libc, libubox
+Source: package/system/usign
+License: ISC
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 12177
+Filename: usign_2016-07-04-ef6419142a3b0fbcddcccf536e3c1880302c6f89_ar71xx.ipk
+Size: 12931
+MD5Sum: 43d41adff55f39ff62ecdf3cb87b2e36
+SHA256sum: 9f6329332226986502d19d2a94d874a8e50fcf8d0d586434150fce95adaa9f11
+Description:  OpenWrt signature verification utility
+
+Package: wireless-tools
+Version: 29-5
+Depends: libc
+Source: package/network/utils/wireless-tools
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 19748
+Filename: wireless-tools_29-5_ar71xx.ipk
+Size: 20505
+MD5Sum: 342a42bf79a09b231490d2d3904d490b
+SHA256sum: c13fe188efab13d5cd8e96fce8c85f72201d05073c3fda38d9f27efe4b2a11a4
+Description:  This package contains a collection of tools for configuring wireless
+ adapters implementing the "Linux Wireless Extensions".
+
+Package: wpad-mini
+Version: 2016-06-15-1
+Depends: libc, libnl-tiny, hostapd-common, libubus
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: ar71xx
+Installed-Size: 232462
+Filename: wpad-mini_2016-06-15-1_ar71xx.ipk
+Size: 233188
+MD5Sum: dcc9a975190ca5298e85c29699fd69b8
+SHA256sum: 68d278bcb4df64aa6cb373114658ed593de47da22ffa2d3dd5f8e0ae566b48eb
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+
+Package: zlib
+Version: 1.2.8-1
+Depends: libc
+Source: package/libs/zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+Architecture: ar71xx
+Installed-Size: 35789
+Filename: zlib_1.2.8-1_ar71xx.ipk
+Size: 36442
+MD5Sum: 2f8bc41da9b20478316da5dd8a11261a
+SHA256sum: bbc4ddc9db879dc3e6361f03b933da49c1e44c7435440a1eaba91a5a059ee650
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
+
